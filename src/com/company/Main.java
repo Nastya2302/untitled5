@@ -4,13 +4,14 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        String s;
-        String s1 = "Привет";
-        Scanner scanner = new Scanner(System.in);
-        s = scanner.nextLine();
-        if (s.startsWith(s1))
-            System.out.println("YES");
-        else
-            System.out.println("NO");
+        double y;
+        System.out.print("Результати циклу: ");
+        for (double x=-1;x<=1;x+=0.1) {
+            if(x==0)
+                System.out.println("Ділити на 0 не можна!");
+            y = Math.pow(x, (1/x));
+            System.out.print(y+"\n");
+        }
+
     }
 }
